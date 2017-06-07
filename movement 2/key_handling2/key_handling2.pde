@@ -15,10 +15,7 @@ float radiusIncrement = 0.5;
 void detectKeys() {
   println(ballRadius);
   if (left)
-   ballVx-=gravityx;
+    ballRadius = ballRadius - radiusIncrement;
   if (right) 
-  {ballVx += gravityx;}
-  if (up)
-  {ballVy -=gravity;}
-   // ballRadius=ballRadius + radiusIncrement;
+    ballRadius=ballRadius + radiusIncrement;
 }
